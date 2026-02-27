@@ -499,8 +499,8 @@ class VoicePadApp:
         self._setup_styles()
         self._build_toolbar()
         self._build_text_area()
-        self._build_status_bar()
         self._build_partial_display()
+        self._build_status_bar()
         
         # ---- Keyboard Shortcuts ----
         self.root.bind("<Control-s>", lambda e: self.save_file())
@@ -644,7 +644,7 @@ class VoicePadApp:
         This gives the user immediate visual feedback that the mic is working.
         """
         partial_frame = tk.Frame(self.root, bg=self.colors["surface"])
-        partial_frame.pack(fill=tk.X, side=tk.BOTTOM, before=self.root.winfo_children()[-1])
+        partial_frame.pack(fill=tk.X, side=tk.BOTTOM)
         
         self.partial_label = tk.Label(
             partial_frame,
