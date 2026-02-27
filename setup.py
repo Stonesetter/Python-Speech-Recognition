@@ -22,6 +22,7 @@ def install_packages():
         "vosk",       # Speech recognition engine (offline, fast)
         "pyaudio",    # Microphone audio capture
         "pynput",     # Global keyboard hotkeys
+        "psutil",     # Resource monitoring (CPU, RAM)
     ]
     
     print("=" * 50)
