@@ -1,4 +1,4 @@
-# VoicePad — Real-Time Speech Dictation App
+# Basic Speech-to-Text with Tkinter
 
 A Windows desktop dictation app built in Python, similar to Windows' built-in Win+H feature but with offline processing, voice commands, and multi-language support.
 
@@ -10,6 +10,7 @@ python setup.py
 
 # 2. Launch the app
 python dictator.py --model vosk-model-small-en-us-0.15
+\*note: make sure that you include the entire filepath where you downloaded the vosk folder at the top of the window, e.g. C:\Windows\User\Documents\ProjectName\
 ```
 
 That's it! Click **🎤 Start Dictation** or press **Ctrl+Shift+D** and start talking.

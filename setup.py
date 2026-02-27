@@ -1,6 +1,6 @@
 """
 =============================================================================
-VoicePad Setup Script
+Basic Speech-to-Text with Tkinter Setup Script
 =============================================================================
 Run this FIRST to install dependencies and download the speech model.
 
@@ -131,14 +131,14 @@ def verify_microphone():
 
 
 def main():
-    parser = argparse.ArgumentParser(description="VoicePad Setup")
+    parser = argparse.ArgumentParser(description="Basic Speech-to-Text with Tkinter Setup")
     parser.add_argument("--large", action="store_true",
                         help="Download the large (more accurate) model instead of small")
     args = parser.parse_args()
     
     print("""
 ╔══════════════════════════════════════════════════╗
-║          VoicePad — Setup Wizard                 ║
+║          Basic Speech-to-Text with Tkinter — Setup                 ║
 ║          Speech Recognition Dictation App        ║
 ╚══════════════════════════════════════════════════╝
     """)
@@ -169,7 +169,7 @@ def main():
   ✓ Setup Complete!
 {'=' * 50}
 
-  To launch VoicePad:
+  To launch Basic Speech-to-Text with Tkinter:
     python dictator.py --model {model}
 
   Quick reference:

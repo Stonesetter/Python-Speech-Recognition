@@ -1,6 +1,6 @@
 """
 =============================================================================
-VoicePad - A Real-Time Speech Recognition Dictation App
+Basic Speech-to-Text with Tkinter
 =============================================================================
 
 HOW IT WORKS (Learning Guide):
@@ -473,7 +473,7 @@ class TextProcessor:
 # which is how the audio thread communicates with the GUI thread safely.
 # ===========================================================================
 
-class VoicePadApp:
+class SpeechToTextApp:
     """Main application window and controller."""
     
     # Default model path — user can change this
@@ -490,7 +490,7 @@ class VoicePadApp:
         
         # ---- Build GUI ----
         self.root = tk.Tk()
-        self.root.title("VoicePad — Speech Dictation")
+        self.root.title("Basic Speech-to-Text with Tkinter")
         self.root.geometry("900x650")
         self.root.minsize(600, 400)
         
@@ -1000,7 +1000,7 @@ def main():
     import argparse
     
     parser = argparse.ArgumentParser(
-        description="VoicePad — Real-Time Speech Dictation",
+        description="Basic Speech-to-Text with Tkinter",
         formatter_class=argparse.RawDescriptionHelpFormatter,
         epilog="""
 Examples:
@@ -1048,13 +1048,13 @@ Keyboard Shortcuts:
     
     # Launch the app
     print("=" * 50)
-    print("  VoicePad — Speech Dictation App")
+    print("  Basic Speech-to-Text with Tkinter")
     print("=" * 50)
     print(f"  Model path: {args.model}")
     print(f"  Global hotkey: Ctrl+Shift+D")
     print("=" * 50)
     
-    app = VoicePadApp()
+    app = SpeechToTextApp()
     app.model_var.set(args.model)
     
     # Auto-load model if it exists
